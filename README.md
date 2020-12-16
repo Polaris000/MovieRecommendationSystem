@@ -1,10 +1,36 @@
-## MovieRecommendationSystem
+# MovieRecommendationSystem
+
+## Abstract
+Recommender Systems are used almost everywhere in today’s world, from e-commerce websites,
+streaming services to various social media websites. These systems have become an integral part
+of our day to day life that we may not even realize that we are using one. In this project we are
+implementing collaborative filtering based recommender systems. There are two main approaches
+of collaborative filtering:
+- User-based    
+- Item-based    
+
+We explore several user-based collaborative filtering techniques on MovieLens Dataset, and try
+to predict the top 5 similar movies for a given target user. The approaches used in this project have
+been novel and are able to give lower MAE values as compared to the standard implementations.
 
 
+## Project Implementation
+The general idea of the project is simple: implement a naive user-vased recommendation system and build upon that to get better results.
 
-## About
+- Naive
+User based collaborative filtering works based on the assumption that the users who have liked
+similar movies in the past will tend to like similar movies in the future. Hence, the first step in
+recommending movies to target users is to find similar neighbours of the given target user. The
+similarity metric used in our study is Pearson Correlation. After calculating the similarity score of
+target user with every other user, we consider top 10 most similar users to the target users in our
+further calculations. Predictions are made using the Resnick prediction formula.
 
-
+- Improvements made:
+    - Using tag data
+    - Giving importance to the number of co-rated movies
+    - Increasing the number of neighbours
+    - Giving more importance to rare movies (with a lesser number of movies)
+    - Using cosine similarity instead of Pearson Correlation
 
 ## Usage
 
@@ -23,6 +49,13 @@ To install libraries:
 ```
 $ pip3 install -r requirements.txt
 ```
+
+### Dataset
+MovieLens Dataset
+#### Files
+- ratings.csv
+- tags.csv
+- movies.csv
 
 ### Input Files
 --------
@@ -57,6 +90,14 @@ RS_main.py:
   eval.csv  
   
 test.py:  
-    output.csv   
+    output.csv
+    
+## Acknowledgements
+This project is a team effort. Contributions were made by:
+- Aniruddha Karajgi
+- Rohit K Bharadwaj
+- Jhaveri Ayush Rajesh
+- Rahul Jha
+- Pranay Khariwal
   
   
