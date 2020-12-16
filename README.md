@@ -122,5 +122,8 @@ This project is a team effort. Contributions were made by:
 - Jhaveri Ayush Rajesh
 - Rahul Jha
 - Pranay Khariwal
+
+
+For more information regarding this project, have a look at our [report](MovieRecommenderSystem.pdf).
   
   
