@@ -124,6 +124,6 @@ This project is a team effort. Contributions were made by:
 - Pranay Khariwal
 
 
-For more information regarding this project, have a look at our [report](MovieRecommenderSystem.pdf).
+For more information regarding this project, have a look at our [report](MovieRecommendationSystem.pdf).
   
   
