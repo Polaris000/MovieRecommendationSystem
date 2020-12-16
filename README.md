@@ -32,6 +32,9 @@ further calculations. Predictions are made using the Resnick prediction formula.
     - Giving more importance to rare movies (with a lesser number of movies)
     - Using cosine similarity instead of Pearson Correlation
     
+- Testing: MAE loss was used along with 5-fold cross-validation.
+
+    
     
 ## Results
 - Naive Implementation  
@@ -102,16 +105,15 @@ This file lists the top-5 recommended movies along with previously seen movies f
   
     $ python3 test.py --input ./data/test_user.txt --output output.csv
 
-### Output files  
+### Output files
 
 RS_main.py:  
------------
   utilitymatrix.csv  
   utilitymatrix2.csv (main utility matrix)  
-  eval.csv  
+  eval.csv: MAE values for each implementation
   
 test.py:  
-    output.csv
+    output.csv: final predictions
     
 ## Acknowledgements
 This project is a team effort. Contributions were made by:
