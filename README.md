@@ -94,26 +94,26 @@ MovieLens Dataset
 ### Execution  
 RS_main.py:  
 
-This file will be main file to run recommender system including prediction and and performance evaluation for the basic implementation and its 5 improvements.   
+Running this file executes the recommender system including prediction and and performance evaluation for the basic implementation and its 5 improvements.   
 
     $ python3 RS_main.py --input ./data/ratings.csv --output eval.csv
 
 
 test.py:  
   
-This file lists the top-5 recommended movies along with previously seen movies for the 10 random users using our best performing improvement to the recommender system.  
+Executing this file lists the top-5 recommended movies along with previously seen movies for the 10 random users using our best performing improvement to the recommender system.  
   
     $ python3 test.py --input ./data/test_user.txt --output output.csv
 
 ### Output files
 
-RS_main.py:  
-  utilitymatrix.csv  
-  utilitymatrix2.csv (main utility matrix)  
-  eval.csv: MAE values for each implementation
+- RS_main.py:  
+  - utilitymatrix.csv  
+  - utilitymatrix2.csv (main utility matrix)  
+  - eval.csv: MAE values for each implementation
   
-test.py:  
-    output.csv: final predictions
+- test.py:  
+    - output.csv: final predictions
     
 ## Acknowledgements
 This project is a team effort. Contributions were made by:
