@@ -26,11 +26,31 @@ target user with every other user, we consider top 10 most similar users to the 
 further calculations. Predictions are made using the Resnick prediction formula.
 
 - Improvements made:
-    - Using tag data
+    - Using tag data (unlike the naive approach, which used only rating data)
     - Giving importance to the number of co-rated movies
     - Increasing the number of neighbours
     - Giving more importance to rare movies (with a lesser number of movies)
     - Using cosine similarity instead of Pearson Correlation
+    
+    
+## Results
+- Naive Implementation  
+![](/results/naive.png)
+
+- Improvement 1:  
+![](/results/imp1.png)
+
+- Improvement 2:  
+![](/results/imp2.png)
+
+- Improvement 3:  
+![](/results/imp3.png)
+
+- Improvement 4:  
+![](/results/imp4.png)
+
+- Improvement 5:  
+![](/results/imp5.png)
 
 ## Usage
 
